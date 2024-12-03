@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "DemoProject",
+    platforms: [.iOS(.v14), .macOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -18,8 +19,9 @@ let package = Package(
             name: "DemoProject",
             dependencies: [],
              resources: [
-                 .process("Resources/Storyboards") // Ensure resources folder is processed
-            ])
+                 .process("Resources/Storyboards")// Ensure resources folder is processed
+            ]
+            )
         
     ]
 )
