@@ -16,8 +16,9 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "DemoProject",
+            path: "DemoProject/Sources" ,
             resources: [
-                 .process("DemoProject/Base")  // Add your Storyboard folder here
+                .process("DemoProject/Base"),
             ])
         
     ]
