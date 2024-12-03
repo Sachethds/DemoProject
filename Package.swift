@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "DemoProject",
             resources: [
-                .process("Resources") // Add this to process resources
+                .process("DemoProject") // Add this to process resources
             ])
         ,
     ]
