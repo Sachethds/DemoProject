@@ -13,14 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-
-        let sb = UIStoryboard(name: "DemoStoryBoard", bundle: Bundle.main)
-        let vc = sb.instantiateViewController(withIdentifier: "FirstVC")
-        let navController = NavigationController(vc: viewController)
-
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
+ 
         return true
     }
 

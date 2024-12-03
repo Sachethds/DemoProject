@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "DemoProject",
             resources: [
-                 .process("Resources/Storyboards")  // Add your Storyboard folder here
+                 .process("DemoProject/Base")  // Add your Storyboard folder here
             ])
         
     ]
