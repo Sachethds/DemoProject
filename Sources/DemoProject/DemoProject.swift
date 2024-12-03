@@ -3,8 +3,8 @@
 import Foundation
 import UIKit
 
-extension UIViewController{
-    func transition(){
+public extension UIViewController{
+    func navigateToPackage(){
         let sb = UIStoryboard(name: "DemoStoryBoard", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "FirstVC")
         self.navigationController?.pushViewController(vc, animated: true)
